@@ -4,4 +4,4 @@ packages:
   - nginx
 runcmd:
   - service nginx restart
-  - [ 'sh', '-c', 'echo "<head><title>TRAHOANGVIET-60</title></head><body><h1 style="text-align:center;">NAME: Tra Hoang Viet <br>MSSV: JK-ENR-HA-10360</h1><p>Web server: <strong>"`hostname`"</strong></p></body>" > /var/www/html/index.nginx-debian.html']
+  - [ 'sh', '-c', 'echo "<head><title>TRAHOANGVIET-60</title></head><body><h1">NAME: Tra Hoang Viet <br>MSSV: JK-ENR-HA-10360</h1><p>Web server: <strong>"`hostname`"</strong></p></body>" > /var/www/html/index.nginx-debian.html']
