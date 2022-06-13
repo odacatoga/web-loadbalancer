@@ -72,20 +72,3 @@ done
 echo '--------------------------------------------------------'
 echo '             VM Setup Script Completed'
 echo '--------------------------------------------------------'
-
-#cloud-config
-package_upgrade: true
-packages:
-  - nginx
-runcmd:
-  - service nginx restart
-  - [ 'sh', '-c', 'echo "<head><title>TRAHOANGVIET-60</title></head><body><h1>NAME: Tra Hoang Viet <br>MSSV: JK-ENR-HA-10360</h1><p>Web server: <strong>"`hostname`"</strong></p></body>" > /var/www/html/index.nginx-debian.html']
-
-
-#cloud-config
-package_upgrade: true
-packages:
-  - nginx
-runcmd:
-  - service nginx restart
-  - [ 'sh', '-c', 'echo "<head><title>TRAHOANGVIET-60</title></head><body><h1>NAME: Tra Hoang Viet <br>MSSV: JK-ENR-HA-10360</h1><p>Web server: <strong>"`hostname`"</strong></p></body>" > /var/www/html/index.nginx-debian.html']
