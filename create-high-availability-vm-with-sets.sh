@@ -1,7 +1,7 @@
 #!/bin/bash
 # Usage: bash create-high-availability-vm-with-sets.sh <Resource Group Name>
 
-RgName=”TraHoangViet-60”
+RgName=$1
 
 date
 # Create a Virtual Network for the VMs
